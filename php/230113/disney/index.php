@@ -26,13 +26,13 @@ $characters = getAPI("https://api.disneyapi.dev/characters");
 
         <div class="col mb-5">
           <div class="card">
-          <a href="character.php?id=<?= $character->_id ?>">
-                    <img class="gui-card__img" src="<?= $character->imageUrl ?>" alt="" />
-                  </a>
+            <a href="character/<?= $character->_id ?>">
+              <img class="gui-card__img" src="<?= $character->imageUrl ?>" alt="" />
+            </a>
             <div class="card-body">
               <h5 class="card-title"><?= $character->name ?></h5>
-              <a href="character.php?id=<?= $character->_id ?>">
-                    info
+              <a href="character/<?= $character->_id ?>">
+                info
               </a>
             </div>
           </div>
